@@ -10,9 +10,9 @@ while flag=="Y":
     print(f"Pressure {pressure:.2f} hPa")
     if temperature>30:
         weather = "Hot"
-        sense.set_pixel(255,0,0)
+        colour = (255,0,0)
     else:
         weather = "Cold"
         colour = [0,0,255]
-    sense.show_message(f"{weather}, {temperature:.2f}C")
+    sense.show_message(f"{weather}, {temperature:.2f}C", text_colour = colour)
     flag=input("Do you want to continue? (Y/N): ")
