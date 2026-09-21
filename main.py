@@ -1,8 +1,6 @@
 from sense_hat import SenseHat
 sense = SenseHat()
 sense.clear()
-sense.clear(255,0,0)
-#sense.set_pixel(0,0, 255, 255, 255)
 flag=input("Do you want to continue? (Y/N): ")
 while flag=="Y":
     temperature = sense.get_temperature()
@@ -12,9 +10,9 @@ while flag=="Y":
     print(f"Pressure {pressure:.2f} hPa")
     if temperature>30:
         weather = "Hot"
-        colour = [255,0,0]
+        sense.set_pixel(255,0,0)
     else:
         weather = "Cold"
-        colour = [255,0,0]
+        colour = [0,0,255]
     sense.show_message(f"{weather}, {temperature:.2f}C")
     flag=input("Do you want to continue? (Y/N): ")
