@@ -1,7 +1,8 @@
 from sense_hat import SenseHat
 sense = SenseHat()
 sense.clear()
-sense.set_pixel(0,0, 255, 255, 255)
+sense.clear(255,0,0)
+#sense.set_pixel(0,0, 255, 255, 255)
 flag=input("Do you want to continue? (Y/N): ")
 while flag=="Y":
     temperature = sense.get_temperature()
