@@ -14,7 +14,7 @@ while flag=="Y":
         colour= (255,0,0)
     else:
         weather = "Cold"
-        colour = (0,0,255)
+        colour = (255,0,0)
     sense.clear(colour)
     sense.show_message(f"{weather}, {temperature:.2f}C")
     flag=input("Do you want to continue? (Y/N): ")
