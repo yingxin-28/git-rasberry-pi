@@ -1,2 +1,2 @@
-# git-rasberry-pi
+# git-rasberry-pi (grp 3)
 This is a project done using rasberry pi and SenseHat. The project collects the temperature, pressure and humidity data before processing on its respective rubrix. For the temperature, if below 30 degree celsius, it would display "Cold" and the temperature in blue. If it is above 30 degree celsius, it would display "Hot" and the temperature in red. For pressure, it would just display the pressure in white. For humidity, if humidity is above 60, it would display the humidity in red. If humidity is below 30, it would display the humidity in blue. Else, it would fall in the normal range and will display the humidity in green. The program will run continously and will only exit after being interrupted using the ctrl + c.
