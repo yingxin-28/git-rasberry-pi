@@ -5,7 +5,8 @@ while True:
     temperature = sense.get_temperature()
     pressure = sense.get_pressure()
     humidity = sense.get_humidity()
- 
+
+    #temperature
     print(f"Temperature {temperature:.2f} C")
     print(f"Pressure {pressure:.2f} hPa")
     print(f"Humidity {humidity:.2f} %rH")
@@ -16,8 +17,10 @@ while True:
         weather = "Cold"
         colour = [0,0,255]
     sense.show_message(f"{weather}, {temperature:.2f}C", text_colour = colour)
+    #pressure
     sense.show_message(f"Pressure: {pressure:.2f} hPa", text_colour = (255,255,255))
-  
+
+    #humidity
     if humidity>60:
         colour=[255,0,0]
     elif humidity<30:
@@ -25,4 +28,3 @@ while True:
     else:
         colour = [0,255,0]
     sense.show_message(f"Humidity: {humidity:.2f} %rH", text_colour = colour)
-sense.clear()
