@@ -3,7 +3,7 @@ sense = SenseHat()
 sense.clear()
 sense.clear(255, 0, 0)
 sense.clear(0,0,255)
-while flag==True:
+while True:
     temperature = sense.get_temperature()
     pressure = sense.get_pressure()
  
