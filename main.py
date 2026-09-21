@@ -13,5 +13,5 @@ while flag=="Y":
         weather = "Hot"
     else:
         weather = "Cold"
-    sense.show_message(f"{weather}")
+    sense.show_message(f"{weather}, {temperature:.2f}")
     flag=input("Do you want to continue? (Y/N): ")
