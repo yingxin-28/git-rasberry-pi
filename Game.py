@@ -10,6 +10,6 @@ def roll_dice(event):
         if number==6:
             sense.clear((0,255,0))  
             sense.show_message("Six! One more roll", text_colour = (0,255,0))
-
+sense.stick.direction_middle = roll_dice
 
 
